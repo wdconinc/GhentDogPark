@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ghentdogpark.status.ghentdogpark.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="The Ghent Dog Park is a 0.61-acre, fully fenced park that functions as a ‘community center without the building.’ Each week, hundreds of people and their dogs enjoy a safe, clean, beautiful, and accessible environment to exercise and socialize together."
+        android:textAppearance="@android:style/TextAppearance.Material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="1300 Stockley Gardens, Norfolk, VA 23517"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMapIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDescription"
+        app:layout_constraintTop_toTopOf="@+id/textViewAddress"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+</android.support.constraint.ConstraintLayout>
